@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="../css/ConfirmacionPedido.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Confirmacion de Pedido</title>
+</head>
+
+<body>
+
+    {{> header}}
+
+    <div class="container">
+        <h1 style="margin-top : 2rem; margin-bottom : 2rem" id="listaConsecutivos" class="text-center">{{title}}</h1>
+
+
+        <div id="cuerpo" class="d-flex">
+            <div id="barraLateral">
+                <h3>Pedido</h3>
+                <div id="carrito">
+                    <p>
+                        Se mostrara el carrito de compras
+                    </p>
+                </div>
+                <div id="monto">
+                    <p>Se mostrara el monto total</p>
+                </div>
+                <button type="" class="btn btn-primary mb-2">Pagar</button>
+            </div>
+
+            <div id="contenido">
+
+                <form class="">
+                    <div>
+                        <h2 class="text-center">Se mostrara el nombre del Cliente</h2>
+                    </div>
+                    <div>
+                        <p class="text-center lead">
+                            A continuacion del detalle de la informacion de envio y metodo de pago
+                        </p>
+                    </div>
+
+                    <div>
+                        <h2 class="text-center">Informacion de envio</h2>
+
+
+                        <div class="form-row  justify-content-center align-items-center">
+                            <div class="form-group col-md-6">
+                                <label for="direccionEnvio">Direccion</label>
+                                <input type="text" class="form-control" id="direccionEnvio" name="direccionEnvio"
+                                       placeholder="Se mostrara la Direccion de envio" required>
+                            </div>
+                        </div>
+                        <div class="form-row  justify-content-center align-items-center">
+                            <div class="form-group col-md-6">
+                                <label for="numeroTelefonoCliente">Telefono</label>
+                                <input type="text" class="form-control" id="numeroTelefonoCliente"
+                                       name="numeroTelefonoCliente" placeholder="0000-0000" required>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <h2 class="text-center">Forma de Pago</h2>
+
+
+                        <div class="form-row  justify-content-center align-items-center">
+                            <div class="form-group col-md-6">
+                                <div class="col-auto d-flex">
+                                    <label for="medioPago">Medio</label>
+                                    <input type="text" class="form-control" id="medioPago" name="medioPago"
+                                           placeholder="Medio de Pago" required>
+
+                                    <label for="tipoMedio">Tipo</label>
+                                    <input type="text" class="form-control" id="tipoMedio" name="tipoMedio"
+                                           placeholder="Tipo" required>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="form-row  justify-content-center align-items-center">
+                            <p class="text-center lead">
+                                Se mostrara el resto de informacion referente a la forma de pago
+                            </p>
+                        </div>
+                        <div class="form-row  justify-content-center align-items-center">
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary">Guardar Pedido</button>
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-primary">Cancelar Pedido</button>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

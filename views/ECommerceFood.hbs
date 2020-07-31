@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="../css/ECommerceFood.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+
+    {{> header}}
+
+    <div class="container">
+        <h1 style="margin-top : 2rem; margin-bottom : 2rem" id="listaConsecutivos" class="text-center">{{title}}</h1>
+
+
+        <form id="formBusqueda" action="" method="get" class="container needs-validation">
+            <div class="form-row">
+                <div class="col-3">
+                    <select name="listaProductos" id="listaProductos" class="form-control" required>
+                        <option value="">Lista de Productos</option>
+                        <option value="1">Combo 1</option>
+                        <option value="2">Combo 2</option>
+                        <option value="3">Combo 3</option>
+                        <option value="4">Combo 4</option>
+                        <option value="5">Combo 5</option>
+                    </select>
+                </div>
+                <div class="col-7">
+                    <input id="nombreProducto" name="nombreProducto" type="text"
+                           placeholder="Ingrese el nombre del producto" class="form-control" required>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mb-2">Buscar</button>
+                </div>
+            </div>
+        </form>
+
+        <div id="cuerpo" class="d-flex">
+            <div id="barraLateral">
+                <h3>Pedido</h3>
+                <div id="carrito">
+                    <p>
+                        Se mostrara el carrito de compras
+                    </p>
+                </div>
+                <div id="monto">
+                    <p>Se mostrara el monto total</p>
+                </div>
+                <button type="" class="btn btn-primary mb-2">Pagar</button>
+            </div>
+            <div id="contenido">
+                <h2 class="text-center">Bienvenido al Sitio</h2>
+                <p class="text-center lead">
+                    Se desplegara la lista de productos seleccionados y se tendra la opcion de ver detalle de cada
+                    producto
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

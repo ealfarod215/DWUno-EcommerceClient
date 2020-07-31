@@ -1,0 +1,29 @@
+#navbardrop {
+    color: #ffffff;
+}
+
+#navbardrop:hover {
+    background: #000000;
+    color     : #3fbebc;
+}
+
+#titulo {
+    margin    : 2rem;
+    text-align: center;
+}
+
+#cuerpo {
+    margin-top: 2rem;
+
+}
+
+#barraLateral {
+    width : 20%;
+    height: 100%;
+}
+
+#contenido {
+    width : 80%;
+    height: 100%;
+
+}

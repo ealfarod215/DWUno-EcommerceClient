@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="../css/InformacionCliente.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Informacion del Cliente</title>
+</head>
+
+<body>
+
+    {{> header}}
+
+    <div class="container">
+        <h1 style="margin-top : 2rem; margin-bottom : 2rem" id="listaConsecutivos" class="text-center">{{title}}</h1>
+
+
+        <div id="cuerpo" class="d-flex">
+            <div id="barraLateral">
+                <h3>Pedido</h3>
+                <div id="carrito">
+                    <p>
+                        Se mostrara el carrito de compras
+                    </p>
+                </div>
+                <div id="monto">
+                    <p>Se mostrara el monto total</p>
+                </div>
+                <button type="" class="btn btn-primary mb-2">Pagar</button>
+            </div>
+            <div id="contenido">
+                <h2 class="text-center">Información del Cliente</h2>
+                <p class="text-center lead">
+                    Se Recolectara la información del Cliente
+                </p>
+                <form class="">
+                    <div class="form-row  justify-content-center align-items-center">
+                        <div class="form-group col-md-6">
+                            <label for="nombreCliente">Nombre</label>
+                            <input type="text" class="form-control" id="nombreCliente" name="nombreCliente"
+                                   placeholder="Nombre" required>
+                        </div>
+                    </div>
+                    <div class="form-row  justify-content-center align-items-center">
+                        <div class="form-group col-md-6">
+                            <label for="apellidosCliente">Apellidos</label>
+                            <input type="text" class="form-control" id="apellidosCliente" name="apellidosCliente"
+                                   placeholder="Apellidos" required>
+                        </div>
+                    </div>
+                    <div class="form-row  justify-content-center align-items-center">
+                        <div class="form-group col-md-6">
+                            <label for="telefonoCliente">Telefono</label>
+                            <input type="text" class="form-control" id="telefonoCliente" name="telefonoCliente"
+                                   placeholder="Número de Telefono" required>
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center align-items-center">
+                        <div class="form-group col-md-6">
+                            <label for="direccionCliente">Direccion de Envio</label>
+
+                            <textarea id="direccionCliente" name="direccionCliente" class="form-control"
+                                      placeholder="Contenido" type="text" aria-label="With textarea" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row  justify-content-center align-items-center">
+                        <div class="form-group col-md-6">
+                            <label for="tiqueteCliente">Tiquete de Descueto</label>
+                            <input type="text" class="form-control" id="tiqueteCliente" name="tiqueteCliente"
+                                   placeholder="Número de Tiquete" required>
+                        </div>
+                    </div>
+                    <div class="form-row  justify-content-center align-items-center">
+                        <button type="submit" class="btn btn-primary">Siguiente</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>

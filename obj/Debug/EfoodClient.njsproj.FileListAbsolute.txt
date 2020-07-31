@@ -1,0 +1,3 @@
+F:\Cosas de la laptop\Septimo Cuatrimestre\Diseño Web 1\SegundaParteProyecto\EfoodClient\obj\Debug\EfoodClient.njsprojAssemblyReference.cache
+F:\Cosas de la laptop\Septimo Cuatrimestre\Diseño Web 1\SegundaParteProyecto\EfoodClient\obj\Debug\EfoodClient.njsproj.CoreCompileInputs.cache
+F:\Cosas de la laptop\Septimo Cuatrimestre\Diseño Web 1\SegundaParteProyecto\EfoodClient\bin\Microsoft.NodejsTools.WebRole.dll

@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <link rel="stylesheet" href="../css/DetalleProductos.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Detalle del Producto</title>
+</head>
+
+<body>
+
+    {{> header}}
+
+    <div class="container">
+        <h1 style="margin-top : 2rem; margin-bottom : 2rem" id="listaConsecutivos" class="text-center">{{title}}</h1>
+
+
+        <div id="cuerpo" class="d-flex">
+            <div id="barraLateral">
+                <h3>Pedido</h3>
+                <div id="carrito">
+                    <p>
+                        Se mostrara el carrito de compras
+                    </p>
+                </div>
+                <div id="monto">
+                    <p>Se mostrara el monto total</p>
+                </div>
+                <button type="" class="btn btn-primary mb-2">Pagar</button>
+            </div>
+            <div id="contenido">
+                <h2 class="text-center">Detalle del Producto</h2>
+                <p class="text-center lead">
+                    Se desplegara los detalles del producto Seleccionado
+                </p>
+                <form class="">
+                    <div class="form-row  justify-content-center align-items-center">
+                        <div class="form-group col-md-6">
+                            <label for="nombreProducto">Producto</label>
+                            <input type="text" class="form-control" id="nombreProducto"
+                                   placeholder="Nombre del Producto">
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center align-items-center">
+                        <div class="form-group col-md-6">
+                            <label for="contenidoProducto">Contenido</label>
+
+                            <textarea id="contenidoProducto" name="contenidoProducto" class="form-control"
+                                      placeholder="Contenido" type="text" aria-label="With textarea" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-row justify-content-center align-items-center">
+                        <div class="form-group col-md-6">
+                            <label for="">Precios</label>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio">Pequeño
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio">Normal
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input type="radio" class="form-check-input" name="optradio">Grande
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-row justify-content-center align-items-center">
+                        <div class="form-group col-md-6">
+                            <label for="cantidadProductos" required>Cantidad</label>
+                            <input type="text" class="form-control" id="cantidadProductos" placeholder="Cantidad">
+                        </div>
+                    </div>
+                    <div class="form-row  justify-content-center align-items-center">
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
